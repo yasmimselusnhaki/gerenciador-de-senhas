@@ -21,4 +21,14 @@ function aumentaTamanho(){
     }
     numeroSenha.textContent = tamanhoSenha;
 }
-console.log(botoes)
+const campoSenha = document.querySelector('#campo-senha');
+
+const letrasMaisculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+geraSenha();
+
+function geraSenha(){
+    let numeroAleatorio = Math.random()*letrasMaisculas.length;
+    console.log(numeroAleatorio);
+}
+
+campoSenha.value = letrasMaisculas;
