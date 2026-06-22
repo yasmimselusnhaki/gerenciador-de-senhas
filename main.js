@@ -24,6 +24,7 @@ function aumentaTamanho(){
     geraSenha();
 }
 const campoSenha = document.querySelector('#campo-senha');
+const checbok = document
 
 const letrasMaisculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 geraSenha();
