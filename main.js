@@ -37,7 +37,7 @@ const simbolos = '!@*?';
 
 geraSenha();
 
-    function geraSenha(){
+function geraSenha(){
     let alfabeto = '';
     if (checkbook[0].checkbox){
         alfabeto = alfabeto + letrasMaisculas;
