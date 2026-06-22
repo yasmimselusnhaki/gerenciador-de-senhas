@@ -27,7 +27,7 @@ const campoSenha = document.querySelector('#campo-senha');
 const checkbok = document.querySelectorAll('.checkbox');
 
 for (i=0; i < checkbok.length;i++){
-    checkbox[i].onclick = geraSenha;
+    checkbok[i].onclick = geraSenha;
 }
 
 const letrasMaisculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
