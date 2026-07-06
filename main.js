@@ -37,29 +37,29 @@ for (i=0; i < checkbok.length;i++){
 
 geraSenha();
 
-function geraSenha(){
+function geraSenha() {
     let alfabeto = '';
-    if (checkbok[0].checked){
-        alfabeto = alfabeto + letrasMaisculas;
+    if (checkbox[0].checked) {
+        alfabeto = alfabeto + letrasMaiusculas;
     }
-    if (checkbok[1].checked){
+    if (checkbox[1].checked) {
         alfabeto = alfabeto + letrasMinusculas;
     }
-    if (checkbok[2].checked){
+    if (checkbox[2].checked) {
         alfabeto = alfabeto + numeros;
     }
-    if (checkbok[3].checked){
+    if (checkbox[3].checked) {
         alfabeto = alfabeto + simbolos;
     }
-
     let senha = '';
-    for (let i = 0; i < tamanhoSenha;i++){
-        let numeroAleatorio = Math.random()*alfabeto.length;
+    for (let i = 0; i < tamanhoSenha; i++) {
+        let numeroAleatorio = Math.random() * alfabeto.length;
         numeroAleatorio = Math.floor(numeroAleatorio);
         senha = senha + alfabeto[numeroAleatorio];
     }
     campoSenha.value = senha;
-    classficaSenha(alfabeto.length);
+    classificaSenha(alfabeto.length);
+
 }
 
 function classificaSenha(tamanhoAlfabeto){
