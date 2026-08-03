@@ -7,7 +7,7 @@ const numeros = '0123456789';
 const simbolos = '!@*?';
 const botoes = document.querySelectorAll('.parametro-senha__botao');
 const campoSenha = document.querySelector('#campo-senha');
-const checkbok = document.querySelectorAll('.checkbox');
+const checkbox = document.querySelectorAll('.checkbox');
 const forcaSenha = document.querySelector('.forca');
 
 
@@ -31,8 +31,8 @@ function aumentaTamanho(){
     geraSenha();
 }
 
-for (i=0; i < checkbok.length;i++){
-    checkbok[i].onclick = geraSenha;
+for (i=0; i < checkbox.length;i++){
+    checkbox[i].onclick = geraSenha;
 }
 
 geraSenha();
