@@ -31,7 +31,7 @@ function aumentaTamanho(){
     geraSenha();
 }
 
-for (i=0; i < checkbox.length;i++){
+for (let i = 0; i < checkbox.length;i++){
     checkbox[i].onclick = geraSenha;
 }
 
@@ -63,7 +63,7 @@ function geraSenha() {
 }
 
 function classificaSenha(tamanhoAlfabeto){
-    let entropia = tamanhoSenha * Math.log2(tamanhoSenha);
+    let entropia = tamanhoSenha * Math.log2(tamanhoAlfabeto);
     console.log(entropia);
     forcaSenha.classList.remove('fraca','media','forte');
     if (entropia > 57){
